@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Rocket Elevators | Quote Form</title>
+		<link rel="icon" href="assets/images/other-pictures/12 logos/favicon.ico" type="image/ico" sizes="16x16">
+
+		<meta name="description" content="CodeBoxx Genesis Assignment 1"/>
+		<meta name="Author" content="Anna Chowattanakul" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- REVOLUTION SLIDER -->
+		<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/red.css" rel="stylesheet" type="text/css" id="color_scheme" />
+
+		<style>
+			.staffphoto  {
+				object-fit: cover;
+			}
+			.partner_logo {
+				width: 7em;
+				height: 7em;
+			}
+
+			.choose {
+				margin-top: 70px;
+				margin-bottom: 70px;
+			}
+
+			#residential-form {
+				position: absolute;
+				display:none;
+			}
+
+			#commercial-form {
+				position: absolute;
+				display:none;
+			}
+
+			#corporate-form {
+				position: absolute;
+				display:none;
+			}
+
+			#hybrid-form {
+				position: absolute;
+				display:none;
+			}
+
+			#installation-form {
+				position: absolute;
+				display:none;
+			}
+
+			#installation-form2 {
+				position: absolute;
+				display:none;
+			}
+
+			#installation-form3 {
+				position: absolute;
+				display:none;
+			}
+
+			#installation-form4 {
+				position: absolute;
+				display:none;
+			}
+
+			#footer {
+				position: relative;
+			}
+			
+			#e {
+			position: absolute;
+			display:none;
+			}
+
+			#e2 {
+			position: absolute;
+			display:none;
+			}
+
+			#e3 {
+			position: absolute;
+			display:none;
+			}
+
+			#e4 {
+			position: absolute;
+			display:none;
+			}
+
+
+		</style>
+	</head>
+
+	<!--
+		AVAILABLE BODY CLASSES: 
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+		
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+		
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/_smarty/boxed_background/1.jpg"
+	-->
+	<body class="smoothscroll enable-animation">
+
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- Logo --> 
+						<a class="logo float-left scrollTo mt-10 mb-10" href="#top">
+							<img src="assets/images/original-pictures/R2.png" alt="logo" />
+						</a>
+
+						<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark mt-10">
+							<nav class="nav-main">
+
+								<!-- 
+									.nav-onepage
+									Required for onepage navigation links
+									
+									Add .external for an external link!
+								-->
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									<li class="active"><!-- HOME -->
+										<a href="index.html">
+											HOME
+										</a>
+									</li>
+
+									<li class="dropdown"><!-- SERVICES -->
+										<a class="dropdown-toggle" href="index.html#services">
+											SERVICES
+										</a>
+									
+										<ul class="dropdown-menu">
+											<li>
+												<a href="residential.html">RESIDENTIAL</a>
+											</li>
+											<li>
+												<a href="corporate.html">CORPORATE</a>
+											</li>
+											<li> 
+												<a href="#">GET A QUOTE</a>
+											</li>
+										</ul>
+									</li>
+
+									<li><!-- Portfolio -->
+										<a href="index.html#portfolio">
+											WORK
+										</a>
+									</li>
+									<li><!-- NEWS -->
+										<a href="index.html#news">
+											NEWS
+										</a>
+									</li>
+									</li>
+									<li><!-- CLIENTS -->
+										<a href="index.html#clients">
+											CLIENTS
+										</a>
+									</li>
+									<li><!-- CONTACT -->
+										<a href="index.html#contact">
+											CONTACT
+										</a>
+									</li>
+								</ul>
+
+							</nav>
+						</div>
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+			</div>
+
+				<!-- Parallax -->
+				<section class="parallax parallax-1" style="background-image: url('assets/images/original-pictures/AdobeStock_170843598.jpeg');">
+					<div class="overlay dark-4"><!-- dark overlay [1 to 9 opacity] --></div>
+	
+					<div class="container">
+						<div class="text-center">
+							<h1 class="fs-300 fw-300">QUOTATION</h1>
+						</div>
+	
+					</div>
+				</section>
+				<!-- /Parallax -->
+
+			<!--QUOTE FORM-->
+			<div class="container">
+				<div class="heading-title heading-dotted text-center choose">
+					<h2>Please select one type of building:</h2>
+				</div>
+				<div class="row" style="margin-bottom:100px;">
+					<div class="col-md-3">
+					<input id="residential-button" class="btn btn-success btn-lg text-uppercase btn-block btn-primary:active:focus " type="button" value="Residential">
+					</div>
+					<div class="col-md-3">
+					<input id="commercial-button" class="btn btn-info btn-lg text-uppercase btn-block btn-primary:active:focus"  type="button" value="Commercial">
+					</div>
+
+					<div class="col-md-3">
+					<input id="corporate-button" class="btn btn-primary btn-lg text-uppercase btn-block btn-primary:active:focus" type="button" value="Corporate">	
+					</div>
+
+					<div class="col-md-3">
+					<input id="hybrid-button" class="btn btn-danger btn-lg text-uppercase btn-block btn-primary:active:focus" type="button" value="Hybrid">
+					</div>
+				</div>
+				
+				</div>
+			</div>
+
+			</form>
+			
+	<div class="outer">
+		<!-- RESIDENTIAL BUILDING~~~~FORM -->
+		<section id="residential-form" class="all-forms">
+			<div class="card w-75 container-fluid" style="background-color: rgba(23, 128, 97, 0.192);">
+				<div class="card-body">
+				
+						<header class="text-center mb-60">
+						<h5 class="card-title" style="color:rgb(5, 63, 39); font-size:xx-large; font-weight:bold;">Residential Building</h3>
+						<p class=" card-text lead font-lato" style="color:rgb(5, 63, 39);">Please fill out the form below </p>
+						<hr />
+						</header>
+
+
+					<div class="row">
+
+							<!--~~~~~FORM 1~~~~~-->
+
+							<div action="php/contact.php" method="post" enctype="multipart/form-data">
+							
+								<fieldset>
+									<input type="hidden" name="action" value="contact_send" />
+
+									<div class="row">
+
+										<!-- stepper 1 -->
+										<div class="col-mb-12 col-sm-12">
+											<label for="apartments-residential" style="color:rgb(5, 63, 39);">Number of apartments in the building</label>
+											<input id="apartments-residential" type="text" value="2" min="1" max="100000000" class="form-control stepper">
+										</div>
+										
+										<!-- stepper 2 -->
+										<div class="col-mb-12 col-sm-12">
+											<label for="floors-residential" style="color:rgb(5, 63, 39);">Number of floors in the building</label>
+											<input id="floors-residential" type="text" value="2" min="1" max="100000000" class="form-control stepper">
+										</div>
+
+										<!-- stepper 3 -->
+										<div class="col-mb-12 col-sm-12">
+											<label for="basements-residential" style="color:rgb(5, 63, 39);">Number of basements</label>
+											<input id="basements-residential" type="text" value="2" min="0" max="100000000" class="form-control stepper">
+										</div>
+
+										<div class="mt-40 offset-md-5">
+											<button id="submit-residential-button" type="submit" class="btn btn-success">Submit Form</button>
+										</div>
+
+									</div>
+								</fieldset>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- COMMERCIAL BUILDING~~~~FORM -->
+	
+		<section id="commercial-form" class="all-forms">
+				
+			<div class="card w-75 container-fluid" style= "background-color:rgba(59, 151, 204, 0.185);">
+				<div class="card-body">
+				
+						<header class="text-center mb-60">
+						<h5 class="card-title" style="color:rgb(6, 75, 107); font-size:xx-large; font-weight:bold;">Commercial Building</h3>
+						<p class=" card-text lead font-lato fs">Please fill out the form below </p>
+						<hr />
+						</header>
+
+					<div class="row">
+						<div>
+							<!--~~~~~FORM 2 (commercial)~~~~~-->
+
+							<div action="php/contact.php" method="post" enctype="multipart/form-data">
+							
+								<fieldset>
+									<input type="hidden" name="action" value="contact_send" />
+
+									<div class="row">
+
+										<!-- stepper 1 -->
+										<div class="col-mb-12 col-sm-12">
+											<label for="tenant-commercial" style="color:rgb(6, 75, 107);">Number of separate tenant companies</label>
+											<input id="tenant-commercial" type="text" value="2" min="1" max="100000000" class="form-control stepper">
+										</div>
+										
+										<!-- stepper 2 -->
+										<div class="col-mb-12 col-sm-12">
+											<label for="floors-commercial" style="color:rgb(6, 75, 107);">Number of floors contained in the building</label>
+											<input id="floors-commercial" type="text" value="2" min="1" max="100000000" class="form-control stepper">
+										</div>
+
+										<!-- stepper 3 -->
+										<div class="col-mb-12 col-sm-12">
+											<label for="basements-commercial" style="color:rgb(6, 75, 107);">Number of basements contained in the building</label>
+											<input id="basements-commercial" type="text" value="2" min="0" max="100000000" class="form-control stepper">
+										</div>
+
+										<!-- stepper 4 -->
+										<div class="col-mb-12 col-sm-12">
+											<label for="parking-commercial" style="color:rgb(6, 75, 107);">Number of parking spaces available</label>
+											<input id="parking-commercial" type="text" value="2" min="0" max="100000000" class="form-control stepper">
+										</div>
+
+										<!-- stepper 5 -->
+										<div class="col-mb-12 col-sm-12">
+											<label for="elevator-commercial" style="color:rgb(6, 75, 107);">Number of elevator cages to be deployed</label>
+											<input id="elevator-commercial" type="text" value="2" min="0" max="100000000" class="form-control stepper">
+										</div>
+										
+										<div class="mt-40 offset-md-5">
+											<button id="submit-commercial-button" type="submit" class="btn btn-info">Submit Form</button>
+										</div>
+									    
+									</div>
+								</fieldset>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+	
+
+
+		<!-- CORPORATE BUILDING~~~~FORM -->
+		<section id="corporate-form" class="all-forms">
+				
+			<div class="card w-75 container-fluid" style= "background-color:rgba(248, 213, 58, 0.185);">
+				<div class="card-body">
+				
+						<header class="text-center mb-60 ">
+						<h5 class="card-title" style="color:rgb(252, 137, 6); font-size:xx-large; font-weight:bold;">Corporate Building</h3>
+						<p class=" card-text lead font-lato fs">Please fill out the form below </p>
+						<hr />
+					</header>
+
+
+					<div class="row">
+						<div>
+							<!--~~~~~FORM 3 (Corporate)~~~~~-->
+
+							<div action="php/contact.php" method="post" enctype="multipart/form-data">
+							
+								<fieldset>
+									<input type="hidden" name="action" value="contact_send" />
+
+									<div class="row">
+
+										<!-- stepper 1 -->
+										<div class="col-mb-12 col-sm-12">
+											<label for="tenant-corporate" style="color:rgb(252, 137, 6);">Number of separate tenant companies</label>
+											<input id="tenant-corporate" type="text" value="2" min="0" max="100000000" class="form-control stepper">
+										</div>
+										
+										<!-- stepper 2 -->
+										<div class="col-mb-12 col-sm-12">
+											<label for="floors-corporate" style="color:rgb(252, 137, 6);">Number of floors contained in the building</label>
+											<input id="floors-corporate" type="text" value="2" min="1" max="100000000" class="form-control stepper">
+										</div>
+
+										<!-- stepper 3 -->
+										<div class="col-mb-12 col-sm-12">
+											<label for="basements-corporate" style="color:rgb(252, 137, 6);">Number of basements contained in the building</label>
+											<input id="basements-corporate" type="text" value="2" min="0" max="100000000" class="form-control stepper">
+										</div>
+
+										<!-- stepper 4 -->
+										<div class="col-mb-12 col-sm-12">
+											<label for="parking-corporate" style="color:rgb(252, 137, 6);">Number of parking spaces available</label>
+											<input id="parking-corporate" type="text" value="2" min="0" max="100000000" class="form-control stepper">
+										</div>
+
+										<!-- stepper 5 -->
+										<div class="col-mb-12 col-sm-12">
+											<label for="occupants-corporate" style="color:rgb(252, 137, 6);">Maximum number of occupants per floor</label>
+											<input id="occupants-corporate" type="text" value="2" min="1" max="100000000" class="form-control stepper">
+										</div>
+
+										<div class="mt-40 offset-md-5">
+											<button id="submit-corporate-button" type="submit" class="btn btn-warning">Submit Form</button>
+										</div>
+
+									</div>
+								</fieldset>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- HYBRID BUILDING~~~~FORM -->
+		<section id="hybrid-form" class="all-forms">
+				
+			<div class="card w-75 container-fluid" style= "background-color:rgba(223, 39, 39, 0.096);">
+				<div class="card-body">
+				
+						<header class="text-center mb-60">
+						<h5 class="card-title" style="color:rgb(158, 22, 22); font-size:xx-large; font-weight:bold;">Hybrid Building</h3>
+						<p class=" card-text lead font-lato fs" style="color:rgb(158, 22, 22);">Please fill out the form below </p>
+						<hr />
+					</header>
+
+
+					<div class="row">
+						<div>
+
+							<!--~~~~~FORM 4 (Hybrid)~~~~~-->
+
+							<div action="php/contact.php" method="post" enctype="multipart/form-data">
+							
+								<fieldset>
+									<input type="hidden" name="action" value="contact_send" />
+
+									<div class="row">
+
+										<!-- stepper 1 -->
+										<div class="col-mb-12 col-sm-12"> 
+											<label for="businesses-hybrid" style="color:rgb(158, 22, 22);">Number of distinct businesses</label>
+											<input id="businesses-hybrid" type="text" value="2" min="0" max="100000000" class="form-control stepper">
+										</div>
+										
+										<!-- stepper 2 -->
+										<div class="col-mb-12 col-sm-12">
+											<label for="floors-hybrid" style="color:rgb(158, 22, 22);">Number of floors contained in the building</label>
+											<input id="floors-hybrid" type="text" value="2" min="1" max="100000000" class="form-control stepper">
+										</div>
+
+										<!-- stepper 3 -->
+										<div class="col-mb-12 col-sm-12">
+											<label for="basements-hybrid" style="color:rgb(158, 22, 22);">Number of basements contained in the building</label>
+											<input id="basements-hybrid" type="text" value="2" min="0" max="100000000" class="form-control stepper">
+										</div>
+
+										<!-- stepper 4 -->
+										<div class="col-mb-12 col-sm-12">
+											<label for="parking-hybrid"style="color:rgb(158, 22, 22);">Number of parking spaces available</label>
+											<input id="parking-hybrid" type="text" value="2" min="0" max="100000000" class="form-control stepper">
+										</div>
+
+										<!-- stepper 5 -->
+										<div class="col-mb-12 col-sm-12">
+											<label for="occupants-hybrid" style="color:rgb(158, 22, 22);">Maximum number of occupants per floor</label>
+											<input id="occupants-hybrid" type="text" value="2" min="1" max="100000000" class="form-control stepper">
+										</div>
+
+										<!-- stepper 5 -->
+										<div class="col-mb-12 col-sm-12">
+											<label for="hours-hybrid" style="color:rgb(158, 22, 22);"> Number of hours of activity of the building</label>
+											<input id="hours-hybrid" type="text" value="2" min="0" max="24" class="form-control stepper">
+										</div>
+
+										<div class="mt-40 offset-md-5">
+											<button id="submit-hybrid-button" type="submit" class="btn btn-danger">Submit Form</button>
+										</div>
+
+									</div>
+								</fieldset>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+			<!-- /FORM -->
+
+		<!--INSTALLATION FORM 1-->
+		<section id="installation-form" class="all-forms">
+			<div class="card w-75 container-fluid" style= "background: rgb(0, 0, 0); color:#f8bc0d; padding-top:20px;">
+				<div class="card-body">
+					  <p class="text-center">Based on the information you have provided, the recommended number of elevators is: 
+						<span><i id="number_of_elevator" style = "color:#f8bc0d; font-weight: bold; font-size:xx-large; padding-right: 10px;" class="countTo" data-speed="1600">6000</i></span>
+					  </p>
+				</div>
+			</div>
+
+			<div class="card w-75 container-fluid" style="background-image: url('assets/images/original-pictures/AdobeStock_33975620.jpeg');">
+				<div class="card-body">
+					  <!-- radio -->
+							<div class="row">
+								<div class="col-md-6" style="margin-top:20px; padding:60px;">
+									<label for="standard" style="color:#381904;">
+										<input type="radio" id="standard" name="product-line" value="standard">
+										Standard ($7,565 per shaft)</label>		
+						
+									<label for="premium" style="color:#381904;">
+										<input type="radio" id="premium" name="product-line" value="premium">
+										Premium ($12,345 per shaft)</label>
+				
+									<label for="excelium" style="color:#381904;">
+										<input type="radio" id="excelium" name="product-line" value="excelium">
+										Excelium ($15,400 per shaft)</label>
+									<p style = "color:#A94545;" > + an installation fee <span id="installation-percentage"> </span> </p>
+
+									<div>
+										<button id="backbtn1" class="btn btn-danger">Back</button>
+									</div>
+									
+								</div>
+
+								<div id="est-cost" class="col-md-6 card container"  style="margin-top:20px; padding:20px; background: rgba(0, 0, 0, 0.749); outline: 4px  rgba(0, 0, 0, 0.849);" >
+					
+										<header class="text-center mb-10" id= "choose-one">
+											<h5 class="card-title" style="margin-top:50px; color:#A94545; font-size:xx-large;">Please choose one of the following product-line options.</h3>
+										</header>
+
+									<div id="e" class="row" style="margin-top:50px;">
+									 	<div class="ml-70 mr-70">
+											<h4 style="color:rgb(255, 225, 169);">Cost of elevators:
+												<span class="float-right">$
+													<span style= "color:#f8bc0d" id="elevator-cost1"></span>
+												</span>
+											</h4>
+
+											<h4 style="color:rgb(255, 225, 169);">Cost of installation:
+												<span class="float-right">$
+													<span style= "color:#f8bc0d" id="installation-cost1"></span>
+												</span>
+											</h4>
+
+											<hr style= "height: 1px;
+											color: #f8bc0d;
+											background-color: #f8bc0d;
+											border: none">
+											<h4 style="font-size: large; color:rgb(255, 225, 169);">Estimated GrandTotal: 
+												<span class="float-right">$
+													<span style= "color:#f8bc0d" id="grandtotal1"></span>
+												</span>
+											</h4>
+										</div>
+									</div>
+								</div>
+								
+
+						</div>
+
+					</div >
+				</div>
+		  	</div>
+		</section>
+
+		<!---INSTALLATION FORM 2 -->
+		<section id="installation-form2" class="all-forms">
+			<div class="card w-75 container-fluid" style= "background: rgb(0, 0, 0); color:#f8bc0d; padding-top:20px;">
+				<div class="card-body">
+					  <p class="text-center">Based on the information you have provided, the recommended number of elevators is: 
+						<span><i id="number_of_elevator2" style = "color:#f8bc0d; font-weight: bold; font-size:xx-large; padding-right: 10px;" class="countTo" data-speed="1600">6000</i></span>
+					  </p>
+				</div>
+			</div>
+
+			<div class="card w-75 container-fluid" style="background-image: url('assets/images/original-pictures/AdobeStock_33975620.jpeg');">
+				<div class="card-body">
+					  <!-- radio -->
+							<div class="row">
+								<div class="col-md-6" style="margin-top:20px; padding:60px;">
+									<label for="standard" style="color:#381904;">
+										<input type="radio" id="standard2" name="product-line" value="standard">
+										Standard ($7,565 per shaft)</label>		
+						
+									<label for="premium" style="color:#381904;">
+										<input type="radio" id="premium2" name="product-line" value="premium">
+										Premium ($12,345 per shaft)</label>
+				
+									<label for="excelium" style="color:#381904;">
+										<input type="radio" id="excelium2" name="product-line" value="excelium">
+										Excelium ($15,400 per shaft)</label>
+									<p style = "color:#A94545;" > + an installation fee <span id="installation-percentage2"> </span> </p>
+
+									<div>
+										<button id="backbtn2" class="btn btn-danger">Back</button>
+									</div>
+									
+								</div>
+
+								<div id="est-cost2" class="col-md-6 card container"  style="margin-top:20px; padding:20px; background: rgba(0, 0, 0, 0.749); outline: 4px  rgba(0, 0, 0, 0.849);" >
+					
+										<header class="text-center mb-10" id= "choose-one2">
+											<h5 class="card-title" style="margin-top:50px; color:#A94545; font-size:xx-large;">Please choose one of the following product-line options.</h3>
+										</header>
+
+									<div id="e2" class="row" style="margin-top:50px;">
+									 	<div class="ml-70 mr-70">
+											<h4 style="color:rgb(255, 225, 169);">Cost of elevators:
+												<span class="float-right">$
+													<span style= "color:#f8bc0d" id="elevator-cost2"></span>
+												</span>
+											</h4>
+
+											<h4 style="color:rgb(255, 225, 169);">Cost of installation:
+												<span class="float-right">$
+													<span style= "color:#f8bc0d" id="installation-cost2"></span>
+												</span>
+											</h4>
+
+											<hr style= "height: 1px;
+											color: #f8bc0d;
+											background-color: #f8bc0d;
+											border: none">
+											<h4 style="font-size: large; color:rgb(255, 225, 169);">Estimated GrandTotal: 
+												<span class="float-right">$
+													<span style= "color:#f8bc0d" id="grandtotal2"></span>
+												</span>
+											</h4>
+										</div>
+									</div>
+								</div>
+								
+
+						</div>
+
+					</div >
+				</div>
+		  	</div>
+		</section>
+
+
+		<!---INSTALLATION FORM 3 -->
+		<section id="installation-form3" class="all-forms">
+			<div class="card w-75 container-fluid" style= "background: rgb(0, 0, 0); color:#f8bc0d; padding-top:20px;">
+				<div class="card-body">
+					  <p class="text-center">Based on the information you have provided, the recommended number of elevators is: 
+						<span><i id="number_of_elevator3" style = "color:#f8bc0d; font-weight: bold; font-size:xx-large; padding-right: 10px;" class="countTo" data-speed="1600">6000</i></span>
+					  </p>
+				</div>
+			</div>
+
+			<div class="card w-75 container-fluid" style="background-image: url('assets/images/original-pictures/AdobeStock_33975620.jpeg');">
+				<div class="card-body">
+					  <!-- radio -->
+							<div class="row">
+								<div class="col-md-6" style="margin-top:20px; padding:60px;">
+									<label for="standard" style="color:#381904;">
+										<input type="radio" id="standard3" name="product-line" value="standard">
+										Standard ($7,565 per shaft)</label>		
+						
+									<label for="premium" style="color:#381904;">
+										<input type="radio" id="premium3" name="product-line" value="premium">
+										Premium ($12,345 per shaft)</label>
+				
+									<label for="excelium" style="color:#381904;">
+										<input type="radio" id="excelium3" name="product-line" value="excelium">
+										Excelium ($15,400 per shaft)</label>
+									<p style = "color:#A94545;" > + an installation fee <span id="installation-percentage3"> </span> </p>
+
+									<div>
+										<button id="backbtn3" class="btn btn-danger">Back</button>
+									</div>
+									
+								</div>
+
+								<div id="est-cost3" class="col-md-6 card container"  style="margin-top:20px; padding:20px; background: rgba(0, 0, 0, 0.749); outline: 4px  rgba(0, 0, 0, 0.849);" >
+					
+										<header class="text-center mb-10" id= "choose-one3">
+											<h5 class="card-title" style="margin-top:50px; color:#A94545; font-size:xx-large;">Please choose one of the following product-line options.</h3>
+										</header>
+
+									<div id="e3" class="row" style="margin-top:50px;">
+									 	<div class="ml-70 mr-70">
+											<h4 style="color:rgb(255, 225, 169);">Cost of elevators:
+												<span class="float-right">$
+													<span style= "color:#f8bc0d" id="elevator-cost3"></span>
+												</span>
+											</h4>
+
+											<h4 style="color:rgb(255, 225, 169);">Cost of installation:
+												<span class="float-right">$
+													<span style= "color:#f8bc0d" id="installation-cost3"></span>
+												</span>
+											</h4>
+
+											<hr style= "height: 1px;
+											color: #f8bc0d;
+											background-color: #f8bc0d;
+											border: none">
+											<h4 style="font-size: large; color:rgb(255, 225, 169);">Estimated GrandTotal: 
+												<span class="float-right">$
+													<span style= "color:#f8bc0d" id="grandtotal3"></span>
+												</span>
+											</h4>
+										</div>
+									</div>
+								</div>
+								
+
+						</div>
+
+					</div>
+				</div>
+		  	</div>
+		</section>
+
+		<!---INSTALLATION FORM 4 -->
+		<section id="installation-form4" class="all-forms">
+			<div class="card w-75 container-fluid" style= "background: rgb(0, 0, 0); color:#f8bc0d; padding-top:20px;">
+				<div class="card-body">
+					  <p class="text-center">Based on the information you have provided, the recommended number of elevators is: 
+						<span><i id="number_of_elevator4" style = "color:#f8bc0d; font-weight: bold; font-size:xx-large; padding-right: 10px;" class="countTo" data-speed="1600">6000</i></span>
+					  </p>
+				</div>
+			</div>
+
+			<div class="card w-75 container-fluid" style="background-image: url('assets/images/original-pictures/AdobeStock_33975620.jpeg');">
+				<div class="card-body">
+					  <!-- radio -->
+							<div class="row">
+								<div class="col-md-6" style="margin-top:20px; padding:60px;">
+									<label for="standard" style="color:#381904;">
+										<input type="radio" id="standard4" name="product-line" value="standard">
+										Standard ($7,565 per shaft)</label>		
+						
+									<label for="premium" style="color:#381904;">
+										<input type="radio" id="premium4" name="product-line" value="premium">
+										Premium ($12,345 per shaft)</label>
+				
+									<label for="excelium" style="color:#381904;">
+										<input type="radio" id="excelium4" name="product-line" value="excelium">
+										Excelium ($15,400 per shaft)</label>
+									<p style = "color:#A94545;" > + an installation fee <span id="installation-percentage4"> </span> </p>
+
+									<div>
+										<button id="backbtn4" class="btn btn-danger">Back</button>
+									</div>
+									
+								</div>
+
+								<div id="est-cost4" class="col-md-6 card container"  style="margin-top:20px; padding:20px; background: rgba(0, 0, 0, 0.749); outline: 4px  rgba(0, 0, 0, 0.849);" >
+					
+										<header class="text-center mb-10" id= "choose-one4">
+											<h5 class="card-title" style="margin-top:50px; color:#A94545; font-size:xx-large;">Please choose one of the following product-line options.</h3>
+										</header>
+
+									<div id="e4" class="row" style="margin-top:50px;">
+									 	<div class="ml-70 mr-70">
+											<h4 style="color:rgb(255, 225, 169);">Cost of elevators:
+												<span class="float-right">$
+													<span style= "color:#f8bc0d" id="elevator-cost4"></span>
+												</span>
+											</h4>
+
+											<h4 style="color:rgb(255, 225, 169);">Cost of installation:
+												<span class="float-right">$
+													<span style= "color:#f8bc0d" id="installation-cost4"></span>
+												</span>
+											</h4>
+
+											<hr style= "height: 1px;
+											color: #f8bc0d;
+											background-color: #f8bc0d;
+											border: none">
+											<h4 style="font-size: large; color:rgb(255, 225, 169);">Estimated GrandTotal: 
+												<span class="float-right">$
+													<span style= "color:#f8bc0d" id="grandtotal4"></span>
+												</span>
+											</h4>
+										</div>
+									</div>
+								</div>
+								
+
+						</div>
+
+					</div >
+				</div>
+		  	</div>
+		</section>
+
+	<!-- FOOTER -->
+	<footer id="footer">
+		<div class="container">
+
+
+			<div class="row">
+
+				<!-- col #1 -->
+				<div class="col-md-8">
+
+					<h3 class="letter-spacing-1">WHY US?</h3>
+
+					<!-- Small Description -->
+					<p>
+					We are ranked #1 elevator company in North America. Our company is composed of the best engineers and designers who work together to create the safest, fastest and smoothest elevators that meet your needs! On top of quality assurance, we also take pride in our breath-taking, innovative elevator designs!
+					</p>
+					<h2>(581) 701-0303</h2>
+				</div>
+				<!-- /col #1 -->
+
+				<!-- col #2 -->
+				<div class="col-md-4">
+					<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+
+					<!-- Newsletter Form -->
+					<p>Subscribe to Our Newsletter to get Important News & Offers</p>
+
+					<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+							<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+							<span class="input-group-btn">
+								<button class="btn btn-outline-danger" type="submit">Subscribe</button>
+							</span>
+						</div>
+					</form>
+					<!-- /Newsletter Form -->
+				</div>
+				<!-- /col #2 -->
+
+			</div>
+
+		</div> 
+
+	</footer>
+	<!-- /FOOTER -->
+
+</div>
+<!-- /wrapper -->
+
+
+<!-- SCROLL TO TOP -->
+<a href="#" id="toTop"></a>
+
+
+<!-- PRELOADER -->
+<div id="preloader">
+	<div class="inner">
+		<span class="loader"></span>
+	</div>
+</div><!-- /PRELOADER -->
+
+
+<!-- JAVASCRIPT FILES -->
+<script>var plugin_path = 'assets/plugins/';</script>
+<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+<script src="assets/js/scripts.js"></script>
+
+
+<!-- REVOLUTION SLIDER -->
+<script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script src="assets/js/view/demo.revolution_slider.js"></script>
+
+<!-- PAGELEVEL SCRIPTS -->
+<script src="assets/js/contact.js"></script>
+
+<!-- 
+	GMAP.JS 
+	http://hpneo.github.io/gmaps/
+-->
+<script src="//maps.google.com/maps/api/js?key=AIzaSyCqCn84CgZN6o1Xc3P4dM657HIxkX3jzPY"></script>
+<script src="assets/plugins/gmaps.js"></script>
+<script src="assets/js/quoteform.js"></script>
+
+<script>
+
+	jQuery(document).ready(function(){
+
+		/**
+			@BASIC GOOGLE MAP
+		**/
+		var map2 = new GMaps({
+			div: '#map2',
+			lat: -12.043333,
+			lng: -77.028333,
+			scrollwheel: false
+		});
+
+		var marker = map2.addMarker({
+			lat: -12.043333,
+			lng: -77.028333,
+			title: 'Company, Inc.'
+		});
+
+	});
+
+</script>
+
+</body>
+</html>
